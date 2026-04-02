@@ -960,7 +960,7 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const parent = entry.target.closest('.services-grid, .temoignages-grid, .valeurs, .zones-chips, .tarifs-intro');
+          const parent = entry.target.closest('.services-grid, .temoignages-grid, .valeurs, .zones-chips');
           if (parent) {
             parent.querySelectorAll('.reveal').forEach((el, idx) => setTimeout(() => el.classList.add('visible'), idx * 100));
           } else {
