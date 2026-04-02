@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+
+  <title>Voyante Cécile – Médium à Montpellier | Voyance & Soins Énergétiques</title>
+  <meta name="description" content="Cécile, médium auditive et énergéticienne à Montpellier. Consultations de voyance et soins énergétiques à distance. Plus de 10 ans d'expérience. Réservez votre séance." />
+  <link rel="canonical" href="https://voyante-cecile.netlify.app/" />
+
+  <!-- Open Graph -->
+
+  <meta property="og:title" content="Voyante Cécile – Médium & Énergéticienne à Montpellier" />
+  <meta property="og:description" content="Consultations de voyance, médiumité auditive et soins énergétiques à distance. +10 ans d'expérience." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Voyante Cécile",
+    "description": "Médium auditive, spirituelle, magnétiseuse et énergéticienne à Montpellier. Consultations à distance partout en France.",
+    "telephone": "+33771789802",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "79 Rue Jean Thuile",
+      "addressLocality": "Montpellier",
+      "postalCode": "34090",
+      "addressRegion": "Occitanie",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Montpellier", "France"],
+    "priceRange": "30€ – 55€",
+    "url": "https://voyante-cecile.netlify.app/",
+    "openingHours": "Mo-Fr 09:00-19:00"
+  }
+  </script>
+
+  <style>
+    :root {
+      --noir:       #0D0A14;
+      --noir-card:  #141020;
+      --violet:     #7B5EA7;
+      --violet-cl:  #A07FCC;
+      --or:         #C8A96E;
+      --or-clair:   #E2C896;
+      --blanc:      #F8F4FF;
+      --gris:       #8A849A;
+      --gris-clair: #2A2438;
+      --border:     rgba(200,169,110,0.18);
+      --font-titre: 'Cormorant Garamond', Georgia, serif;
+      --font-corps: 'DM Sans', sans-serif;
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-lg:  20px;
+      --shadow:     0 8px 40px rgba(0,0,0,0.5);
+      --shadow-or:  0 4px 28px rgba(200,169,110,0.22);
+      --shadow-v:   0 4px 28px rgba(123,94,167,0.3);
+      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--noir);
+      color: var(--blanc);
+      font-family: var(--font-corps);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    section { padding: 100px 0; }
+    .container { width: 92%; max-width: 1080px; margin: 0 auto; }
+
+    /* Étoiles décoratives */
+    .etoile { color: var(--or); opacity: 0.6; font-size: 0.7rem; }
+
+    .surtitre {
+      font-family: var(--font-corps);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .surtitre::before, .surtitre::after {
+      content: '✦';
+      font-size: 0.55rem;
+      opacity: 0.7;
+    }
+
+    .section-titre {
+      font-family: var(--font-titre);
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--blanc);
+      margin-bottom: 16px;
+    }
+    .section-titre em { font-style: italic; color: var(--or-clair); }
+
+    .section-sous-titre {
+      color: var(--gris);
+      font-size: 1rem;
+      max-width: 520px;
+      margin-bottom: 60px;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+
+    /* Séparateur mystique */
+    .sep {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 60px;
+      max-width: 300px;
+    }
+    .sep::before, .sep::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--or)); opacity: 0.4; }
+    .sep::after { background: linear-gradient(to left, transparent, var(--or)); }
+    .sep span { color: var(--or); font-size: 0.8rem; opacity: 0.7; white-space: nowrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--font-corps);
+      font-weight: 500;
+      font-size: 0.88rem;
+      letter-spacing: 0.06em;
+      padding: 14px 30px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      min-height: 52px;
+    }
+    .btn-or { background: linear-gradient(135deg, var(--or) 0%, var(--or-clair) 100%); color: var(--noir); font-weight: 600; }
+    .btn-or:hover { transform: translateY(-2px); box-shadow: var(--shadow-or); }
+    .btn-contour { background: transparent; color: var(--blanc); border: 1px solid rgba(255,255,255,0.25); }
+    .btn-contour:hover { border-color: var(--or); color: var(--or); }
+    .btn-violet { background: linear-gradient(135deg, var(--violet) 0%, var(--violet-cl) 100%); color: var(--blanc); }
+    .btn-violet:hover { transform: translateY(-2px); box-shadow: var(--shadow-v); }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ===== NAVBAR ===== */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: background var(--transition), padding var(--transition);
+    }
+    #navbar.scrolled {
+      background: rgba(13,10,20,0.95);
+      backdrop-filter: blur(16px);
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-family: var(--font-titre);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--blanc);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-logo-sub { font-size: 0.62rem; font-weight: 300; letter-spacing: 0.18em; text-transform: uppercase; color: var(--or); margin-top: 2px; }
+
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-size: 0.83rem; font-weight: 400; color: rgba(255,255,255,0.7); transition: color var(--transition); letter-spacing: 0.04em; }
+    .nav-links a:hover { color: var(--or); }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+
+    .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+    .burger span { display: block; width: 22px; height: 1.5px; background: var(--blanc); border-radius: 2px; transition: var(--transition); }
+
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 999;
+      background: var(--noir);
+      flex-direction: column;
+      padding: 100px 32px 48px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--font-titre); font-size: 1.8rem; font-weight: 400; color: rgba(255,255,255,0.8); padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.06); transition: color var(--transition); }
+    .mobile-menu a:hover { color: var(--or); }
+    .mobile-menu .btn { margin-top: 32px; justify-content: center; }
+    .mobile-close { position: absolute; top: 22px; right: 22px; background: none; border: none; font-size: 1.6rem; cursor: pointer; color: var(--gris); padding: 8px; }
+
+    /* ===== HERO ===== */
+    #accueil {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      overflow: hidden;
+    }
+
+    /* Fond avec dégradé cosmique */
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(123,94,167,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 20% 80%, rgba(200,169,110,0.08) 0%, transparent 50%),
+        linear-gradient(160deg, #0D0A14 0%, #1A1228 50%, #0D0A14 100%);
+      z-index: 0;
+    }
+
+    /* Particules étoiles CSS */
+    .hero-stars {
+      position: absolute; inset: 0; z-index: 1;
+      background-image:
+        radial-gradient(1px 1px at 10% 15%, rgba(200,169,110,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 25% 35%, rgba(255,255,255,0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 40% 8%, rgba(200,169,110,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 60% 20%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 75% 45%, rgba(200,169,110,0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 85% 12%, rgba(255,255,255,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 92% 65%, rgba(200,169,110,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 5% 55%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 50% 75%, rgba(200,169,110,0.4) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 90%, rgba(255,255,255,0.25) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 70% 88%, rgba(200,169,110,0.35) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 70%, rgba(255,255,255,0.2) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    /* Orbe lumineux animé */
+    .hero-orb {
+      position: absolute;
+      top: 50%; left: 60%;
+      transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(123,94,167,0.2) 0%, rgba(123,94,167,0.05) 50%, transparent 70%);
+      border-radius: 50%;
+      z-index: 1;
+      animation: orb-pulse 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes orb-pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+      50% { transform: translate(-50%, -50%) scale(1.15); opacity: 1; }
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 620px; }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 28px;
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      background: rgba(200,169,110,0.06);
+    }
+
+    .hero-content h1 {
+      font-family: var(--font-titre);
+      font-size: clamp(2.8rem, 7vw, 4.8rem);
+      font-weight: 600;
+      line-height: 1.05;
+      color: var(--blanc);
+      margin-bottom: 24px;
+    }
+    .hero-content h1 em { font-style: italic; color: var(--or-clair); display: block; }
+
+    .hero-content p { font-size: 1.05rem; color: rgba(255,255,255,0.6); font-weight: 300; margin-bottom: 40px; max-width: 480px; line-height: 1.8; }
+
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 64px; }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: rgba(200,169,110,0.04);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+      max-width: 480px;
+    }
+    .stat-item { flex: 1; min-width: 110px; padding: 18px 20px; border-right: 1px solid var(--border); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: var(--font-titre); font-size: 1.9rem; font-weight: 600; color: var(--or-clair); display: block; line-height: 1; }
+    .stat-label { font-size: 0.7rem; color: var(--gris); margin-top: 4px; display: block; letter-spacing: 0.04em; }
+
+    /* ===== SERVICES ===== */
+    #services { background: var(--noir); }
+
+    .tarifs-intro {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+
+    .tarif-card {
+      background: var(--noir-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .tarif-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--violet), var(--or));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .tarif-card:hover { transform: translateY(-4px); border-color: rgba(200,169,110,0.35); }
+    .tarif-card:hover::before { opacity: 1; }
+    .tarif-card.featured { border-color: rgba(200,169,110,0.4); background: linear-gradient(135deg, rgba(123,94,167,0.15) 0%, rgba(200,169,110,0.08) 100%); }
+    .tarif-card.featured::before { opacity: 1; }
+
+    .tarif-duration { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--or); margin-bottom: 10px; }
+    .tarif-price { font-family: var(--font-titre); font-size: 2.4rem; font-weight: 600; color: var(--blanc); line-height: 1; margin-bottom: 8px; }
+    .tarif-price span { font-size: 1.1rem; font-weight: 300; color: var(--gris); }
+    .tarif-desc { font-size: 0.82rem; color: var(--gris); line-height: 1.6; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+
+    .service-card {
+      background: var(--noir-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-md);
+      padding: 32px 26px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 2px;
+      background: linear-gradient(90deg, var(--violet), var(--or));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover { border-color: rgba(200,169,110,0.2); transform: translateY(-3px); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-card.phare { background: linear-gradient(135deg, rgba(123,94,167,0.2) 0%, rgba(13,10,20,0.9) 100%); border-color: rgba(123,94,167,0.3); }
+    .service-card.phare::after { transform: scaleX(1); }
+
+    .service-icon {
+      width: 48px; height: 48px;
+      background: rgba(200,169,110,0.1);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+    .service-badge { display: inline-block; font-size: 0.63rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--or); background: rgba(200,169,110,0.1); border: 1px solid rgba(200,169,110,0.25); padding: 3px 10px; border-radius: 100px; margin-bottom: 14px; }
+    .service-titre { font-family: var(--font-titre); font-size: 1.25rem; font-weight: 600; margin-bottom: 10px; color: var(--blanc); }
+    .service-desc { font-size: 0.88rem; color: var(--gris); line-height: 1.7; }
+
+    /* ===== À PROPOS ===== */
+    #apropos { background: linear-gradient(160deg, #0D0A14 0%, #130E20 50%, #0D0A14 100%); }
+
+    .apropos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+
+    .apropos-img-wrap { position: relative; }
+    .apropos-img-wrap img { width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-lg); position: relative; z-index: 1; }
+
+    /* Halo mystique autour de l'image */
+    .apropos-img-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, var(--violet), var(--or), var(--violet));
+      border-radius: calc(var(--radius-lg) + 2px);
+      z-index: 0;
+      opacity: 0.5;
+    }
+    .apropos-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(ellipse, rgba(123,94,167,0.2) 0%, transparent 70%);
+      z-index: 0;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .apropos-badge {
+      position: absolute;
+      bottom: -20px; right: -16px;
+      z-index: 2;
+      background: linear-gradient(135deg, var(--or) 0%, var(--or-clair) 100%);
+      color: var(--noir);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-or);
+    }
+    .apropos-badge .num { font-family: var(--font-titre); font-size: 2rem; font-weight: 700; line-height: 1; display: block; }
+    .apropos-badge .label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.06em; display: block; margin-top: 3px; opacity: 0.8; }
+
+    .apropos-text p { color: var(--gris); font-size: 0.97rem; font-weight: 300; margin-bottom: 24px; line-height: 1.8; }
+
+    .valeurs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+    .valeur {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 16px;
+      background: rgba(255,255,255,0.03);
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(200,169,110,0.12);
+      transition: var(--transition);
+    }
+    .valeur:hover { border-color: rgba(200,169,110,0.3); background: rgba(200,169,110,0.05); }
+    .valeur-icon { color: var(--or); font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .valeur h4 { font-size: 0.85rem; font-weight: 600; margin-bottom: 2px; color: var(--blanc); }
+    .valeur p { font-size: 0.78rem; color: var(--gris); margin: 0; }
+
+    /* ===== TÉMOIGNAGES ===== */
+    #temoignages { background: var(--noir); }
+
+    .temoignages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .temoignage-card {
+      background: var(--noir-card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      transition: var(--transition);
+      position: relative;
+    }
+    .temoignage-card:hover { border-color: var(--border); transform: translateY(-3px); }
+    .guillemets { font-family: var(--font-titre); font-size: 3.5rem; line-height: 0.7; color: var(--or); opacity: 0.3; display: block; margin-bottom: 10px; }
+    .stars { color: var(--or); font-size: 0.85rem; letter-spacing: 3px; margin-bottom: 14px; }
+    .temoignage-card blockquote { font-size: 0.92rem; color: rgba(255,255,255,0.65); font-style: italic; font-family: var(--font-titre); line-height: 1.75; margin-bottom: 20px; font-size: 1rem; }
+    .temoignage-author { display: flex; align-items: center; gap: 12px; }
+    .author-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--violet), var(--or)); display: flex; align-items: center; justify-content: center; font-family: var(--font-titre); font-weight: 600; font-size: 0.95rem; color: var(--blanc); flex-shrink: 0; }
+    .author-name { font-weight: 600; font-size: 0.88rem; color: var(--blanc); }
+    .author-meta { font-size: 0.75rem; color: var(--gris); }
+
+    /* ===== ZONES ===== */
+    #zones { background: linear-gradient(160deg, #0D0A14 0%, #130E20 50%, #0D0A14 100%); }
+
+    .zones-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(200,169,110,0.2);
+      border-radius: 100px;
+      font-size: 0.85rem; font-weight: 400;
+      color: rgba(255,255,255,0.7);
+      transition: var(--transition);
+    }
+    .chip:hover { border-color: var(--or); color: var(--or); background: rgba(200,169,110,0.06); }
+    .chip-dot { width: 5px; height: 5px; background: var(--or); border-radius: 50%; opacity: 0.7; }
+    .zones-seo { background: rgba(255,255,255,0.03); border-left: 2px solid var(--or); border-radius: var(--radius-sm); padding: 20px 24px; font-size: 0.9rem; color: var(--gris); line-height: 1.75; }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--noir); }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: start; }
+    .contact-info p { color: var(--gris); font-size: 0.95rem; font-weight: 300; margin-bottom: 36px; line-height: 1.8; }
+    .contact-liens { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+    .contact-lien { display: flex; align-items: center; gap: 14px; font-weight: 400; font-size: 0.95rem; color: rgba(255,255,255,0.8); transition: color var(--transition); }
+    .contact-lien:hover { color: var(--or); }
+    .contact-lien-icon { width: 44px; height: 44px; background: rgba(200,169,110,0.08); border: 1px solid var(--border); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; }
+
+    .wa-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: var(--blanc); padding: 14px 24px; border-radius: 100px; font-weight: 600; font-size: 0.9rem; transition: var(--transition); min-height: 52px; }
+    .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.35); }
+    .wa-btn svg { width: 20px; height: 20px; fill: var(--blanc); }
+
+    .contact-form { background: var(--noir-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px 32px; }
+    .contact-form h3 { font-family: var(--font-titre); font-size: 1.4rem; font-weight: 600; color: var(--blanc); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .form-group label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris); }
+    .form-group input, .form-group select, .form-group textarea {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-sm);
+      color: var(--blanc);
+      font-family: var(--font-corps);
+      font-size: 0.95rem;
+      padding: 12px 14px;
+      transition: border-color var(--transition);
+      width: 100%; appearance: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--or); background: rgba(200,169,110,0.05); }
+    .form-group select option { background: var(--noir-card); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-submit { width: 100%; justify-content: center; margin-top: 8px; height: 52px; border-radius: 100px; }
+    .form-success { display: none; text-align: center; padding: 32px 16px; }
+    .form-success .check-icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .form-success h4 { font-family: var(--font-titre); font-size: 1.3rem; margin-bottom: 8px; color: var(--blanc); }
+    .form-success p { color: var(--gris); font-size: 0.9rem; }
+
+    /* ===== FOOTER ===== */
+    footer { background: #080610; border-top: 1px solid var(--border); padding: 56px 0 28px; }
+    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .footer-logo { font-family: var(--font-titre); font-size: 1.3rem; font-weight: 600; color: var(--blanc); margin-bottom: 4px; }
+    .footer-tagline { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--or); opacity: 0.7; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.86rem; color: rgba(255,255,255,0.35); font-weight: 300; line-height: 1.65; max-width: 280px; }
+    .footer-col h4 { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--or); margin-bottom: 18px; opacity: 0.8; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a { font-size: 0.86rem; color: rgba(255,255,255,0.35); transition: color var(--transition); }
+    .footer-col ul a:hover { color: var(--or); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { font-size: 0.76rem; color: rgba(255,255,255,0.22); }
+    .footer-bottom a { color: rgba(255,255,255,0.22); }
+    .footer-bottom a:hover { color: var(--or); }
+
+    /* ===== WHATSAPP FLOTTANT ===== */
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 990;
+      display: flex; align-items: center; gap: 10px;
+      background: #25D366; color: var(--blanc);
+      padding: 14px 20px; border-radius: 100px;
+      font-weight: 600; font-size: 0.85rem;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      transition: var(--transition);
+      animation: pulse-wa 3s ease-in-out infinite;
+    }
+    .whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(37,211,102,0.6); }
+    .whatsapp-float svg { width: 22px; height: 22px; fill: var(--blanc); }
+    @keyframes pulse-wa { 0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45); } 50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); } }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta .btn-contour { display: none; }
+      .burger { display: flex; }
+      .apropos-grid { grid-template-columns: 1fr; gap: 48px; }
+      .apropos-img-wrap img { height: 320px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .tarifs-intro { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      section { padding: 72px 0; }
+      .form-row { grid-template-columns: 1fr; }
+      .valeurs { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; }
+      .stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .stat-item:last-child { border-bottom: none; }
+      .whatsapp-float .float-text { display: none; }
+      .whatsapp-float { padding: 14px; border-radius: 50%; }
+      .nav-cta .btn { display: none; }
+      .tarifs-intro { grid-template-columns: 1fr; }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <span>Voyante Cécile</span>
+        <span class="nav-logo-sub">✦ Médium · Énergéticienne ✦</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Séances</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:0771789802" class="btn btn-contour">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          07 71 78 98 02
+        </a>
+        <a href="#contact" class="btn btn-or">Réserver une séance</a>
+      </div>
+      <button class="burger" id="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENU MOBILE -->
+
+  <nav class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <a href="#services">Séances & Tarifs</a>
+    <a href="#apropos">À propos</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#zones">Zones</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-or">Réserver une séance</a>
+    <a href="https://wa.me/33771789802?text=Bonjour%20C%C3%A9cile%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation." class="wa-btn" style="margin-top:12px;justify-content:center;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-stars"></div>
+    <div class="hero-orb"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">✦ Médium auditive · Montpellier & France entière</div>
+        <h1>Cécile<br/><em>Médium & Énergéticienne</em></h1>
+        <p>Guidance spirituelle, médiumité auditive et soins énergétiques à distance. Je vous accompagne avec bienveillance vers la clarté et l'apaisement.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-or">Réserver une séance</a>
+          <a href="#services" class="btn btn-contour">Voir les tarifs →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Ans d'expérience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">À distance</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Note Google</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES & TARIFS -->
+
+  <section id="services">
+    <div class="container">
+      <div class="reveal">
+        <div class="surtitre">Séances & Tarifs</div>
+        <h2 class="section-titre">Des consultations<br/><em>au service de votre chemin</em></h2>
+        <p class="section-sous-titre">Toutes mes consultations se déroulent à distance, par téléphone. Accessibles depuis toute la France, à l'heure qui vous convient.</p>
+      </div>
+
+```
+  <!-- Tarifs -->
+  <div class="tarifs-intro reveal">
+    <div class="tarif-card reveal">
+      <div class="tarif-duration">Consultation courte</div>
+      <div class="tarif-price">30<span>€</span></div>
+      <p class="tarif-desc">Séance de 20 minutes — idéale pour une question précise ou un premier contact.</p>
+    </div>
+    <div class="tarif-card featured reveal">
+      <div class="tarif-duration">⭐ Consultation complète</div>
+      <div class="tarif-price">55<span>€</span></div>
+      <p class="tarif-desc">Séance de 45 minutes — pour un accompagnement approfondi sur votre situation.</p>
+    </div>
+    <div class="tarif-card reveal">
+      <div class="tarif-duration">Soin énergétique</div>
+      <div class="tarif-price">50<span>€</span></div>
+      <p class="tarif-desc">Rééquilibrage et harmonisation énergétique à distance — durée adaptée à vos besoins.</p>
+    </div>
+  </div>
+
+  <!-- Services détaillés -->
+  <div class="services-grid">
+    <div class="service-card phare reveal">
+      <div class="service-badge">✦ Don principal</div>
+      <div class="service-icon">🔮</div>
+      <div class="service-titre">Médiumité auditive</div>
+      <p class="service-desc">Cécile reçoit les messages de vos proches défunts et du monde spirituel par la voie auditive. Un don rare, exercé avec respect et bienveillance.</p>
+    </div>
+    <div class="service-card phare reveal">
+      <div class="service-badge">✦ Spécialité</div>
+      <div class="service-icon">✨</div>
+      <div class="service-titre">Soins énergétiques</div>
+      <p class="service-desc">Magnétisme, rééquilibrage des chakras et harmonisation de votre champ énergétique à distance. Apaisement, vitalité retrouvée, libération des blocages.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🌙</div>
+      <div class="service-titre">Voyance & Guidance</div>
+      <p class="service-desc">Consultation de voyance sur votre vie sentimentale, professionnelle ou personnelle. Des réponses claires pour éclairer votre chemin.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">⚡</div>
+      <div class="service-titre">Magnétisme</div>
+      <p class="service-desc">Transmission d'énergie magnétique pour soulager douleurs, fatigue, stress et anxiété. Agit en complément des traitements médicaux.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🌿</div>
+      <div class="service-titre">Accompagnement spirituel</div>
+      <p class="service-desc">Guidance sur votre chemin de vie, vos missions d'âme et votre évolution personnelle. Un espace d'écoute bienveillant et sans jugement.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">💫</div>
+      <div class="service-titre">Protection énergétique</div>
+      <p class="service-desc">Nettoyage et protection de votre aura contre les influences négatives. Bouclier énergétique et purification de votre espace de vie.</p>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- À PROPOS -->
+
+  <section id="apropos">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-img-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80" alt="Cécile médium auditive et énergéticienne Montpellier" loading="lazy" />
+          <div class="apropos-badge">
+            <span class="num">10+</span>
+            <span class="label">ans d'expérience</span>
+          </div>
+        </div>
+        <div class="apropos-text reveal">
+          <div class="surtitre">À propos</div>
+          <h2 class="section-titre">Cécile,<br/><em>médium auditive<br/>& énergéticienne</em></h2>
+          <p>Depuis plus de 10 ans, j'accompagne des personnes en quête de clarté, de guérison et de connexion spirituelle. Mon chemin a débuté par la découverte progressive de mes dons de médiumité auditive — la capacité à percevoir des messages du monde spirituel par l'ouïe.</p>
+          <p>Basée à Montpellier, je reçois en consultation téléphonique partout en France. Chaque séance est unique, conduite dans le respect absolu de votre intimité et de votre parcours de vie.</p>
+          <div class="valeurs">
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Discrétion totale</h4><p>Confidentialité absolue de chaque séance</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Bienveillance</h4><p>Accompagnement sans jugement ni pression</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>À distance</h4><p>Consultations partout en France par téléphone</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>+10 ans d'expérience</h4><p>Un don travaillé, maîtrisé et éprouvé</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+
+  <section id="temoignages">
+    <div class="container">
+      <div class="reveal">
+        <div class="surtitre">Témoignages</div>
+        <h2 class="section-titre">Ce que disent<br/><em>celles et ceux que j'accompagne</em></h2>
+        <p class="section-sous-titre">Des retours sincères de personnes qui ont vécu l'expérience d'une consultation avec Cécile.</p>
+      </div>
+      <div class="temoignages-grid">
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>Cécile a su me donner des éléments très précis sur ma situation sans que je lui dise rien. Elle a contacté ma maman décédée et m'a transmis un message qui ne pouvait venir que d'elle. Je suis apaisée.</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">ML</div>
+            <div><div class="author-name">Marie-Laure</div><div class="author-meta">Consultation médiumité · Lyon</div></div>
+          </div>
+        </div>
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>Le soin énergétique à distance m'a surpris par son efficacité. J'ai ressenti une chaleur intense pendant la séance et je me suis senti beaucoup plus léger les jours suivants. Je recommande sans hésitation.</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">TB</div>
+            <div><div class="author-name">Thomas B.</div><div class="author-meta">Soin énergétique · Paris</div></div>
+          </div>
+        </div>
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>J'étais sceptique au départ, mais la précision des informations reçues m'a convaincue. Cécile est douce, bienveillante et très professionnelle. La consultation m'a aidée à prendre une décision importante.</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">SC</div>
+            <div><div class="author-name">Sophie C.</div><div class="author-meta">Voyance & guidance · Bordeaux</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONES -->
+
+  <section id="zones">
+    <div class="container reveal">
+      <div class="surtitre">Zones d'intervention</div>
+      <h2 class="section-titre">Montpellier<br/><em>& toute la France</em></h2>
+      <p class="section-sous-titre">Les consultations se déroulent entièrement par téléphone — où que vous soyez en France, je suis accessible.</p>
+      <div class="zones-chips">
+        <div class="chip"><span class="chip-dot"></span>Montpellier</div>
+        <div class="chip"><span class="chip-dot"></span>Paris</div>
+        <div class="chip"><span class="chip-dot"></span>Lyon</div>
+        <div class="chip"><span class="chip-dot"></span>Marseille</div>
+        <div class="chip"><span class="chip-dot"></span>Bordeaux</div>
+        <div class="chip"><span class="chip-dot"></span>Toulouse</div>
+        <div class="chip"><span class="chip-dot"></span>Nantes</div>
+        <div class="chip"><span class="chip-dot"></span>Strasbourg</div>
+        <div class="chip"><span class="chip-dot"></span>Hérault (34)</div>
+        <div class="chip"><span class="chip-dot"></span>+ toute la France</div>
+      </div>
+      <div class="zones-seo">
+        Cécile propose des consultations de <strong>voyance</strong>, de <strong>médiumité auditive</strong> et des <strong>soins énergétiques à distance</strong> depuis <strong>Montpellier</strong>, accessibles dans toute la <strong>France</strong> par téléphone. Paris, Lyon, Marseille, Bordeaux, Toulouse, Nantes — peu importe où vous êtes, une séance est possible dès aujourd'hui.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="surtitre">Contact</div>
+          <h2 class="section-titre">Réservez<br/><em>votre séance</em></h2>
+          <p>Chaque consultation commence par un simple appel. Je vous rappelle pour convenir d'un créneau qui vous convient, en toute discrétion.</p>
+          <div class="contact-liens">
+            <a href="tel:0771789802" class="contact-lien">
+              <div class="contact-lien-icon">📞</div>
+              07 71 78 98 02
+            </a>
+            <a href="#" class="contact-lien">
+              <div class="contact-lien-icon">📍</div>
+              79 Rue Jean Thuile, 34090 Montpellier
+            </a>
+            <a href="#" class="contact-lien">
+              <div class="contact-lien-icon">🕐</div>
+              Lun–Ven · 09h00 – 19h00
+            </a>
+          </div>
+          <a href="https://wa.me/33771789802?text=Bonjour%20C%C3%A9cile%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation." class="wa-btn">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+
+```
+    <div class="contact-form reveal">
+      <h3>✦ Demande de séance</h3>
+      <form id="contact-form" name="reservation-cecile" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="#contact">
+        <input type="hidden" name="form-name" value="reservation-cecile" />
+        <p style="display:none;"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+        <div class="form-row">
+          <div class="form-group"><label for="f-prenom">Prénom *</label><input type="text" id="f-prenom" name="prenom" placeholder="Marie" required /></div>
+          <div class="form-group"><label for="f-nom">Nom *</label><input type="text" id="f-nom" name="nom" placeholder="Dupont" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="f-tel">Téléphone *</label><input type="tel" id="f-tel" name="telephone" placeholder="06 XX XX XX XX" required /></div>
+          <div class="form-group"><label for="f-email">Email</label><input type="email" id="f-email" name="email" placeholder="marie@mail.fr" /></div>
+        </div>
+        <div class="form-group">
+          <label for="f-service">Type de séance *</label>
+          <select id="f-service" name="service" required>
+            <option value="">Choisissez votre consultation</option>
+            <option>Consultation 20 min — 30€</option>
+            <option>Consultation 45 min — 55€</option>
+            <option>Soin énergétique — 50€</option>
+            <option>Médiumité auditive</option>
+            <option>Magnétisme</option>
+            <option>Accompagnement spirituel</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Votre message (facultatif)</label>
+          <textarea id="f-message" name="message" placeholder="Partagez ce qui vous amène, si vous le souhaitez…"></textarea>
+        </div>
+        <button class="btn btn-or form-submit" type="submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer ma demande
+        </button>
+      </form>
+      <div class="form-success" id="form-success">
+        <div class="check-icon">✨</div>
+        <h4>Demande reçue !</h4>
+        <p>Cécile vous contactera très prochainement pour convenir d'un créneau de séance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Voyante Cécile</div>
+          <div class="footer-tagline">✦ Médium · Énergéticienne · Magnétiseuse ✦</div>
+          <p>Consultations de voyance, médiumité auditive et soins énergétiques à distance depuis Montpellier. France entière.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#services">Séances & Tarifs</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#zones">Zones</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0771789802">07 71 78 98 02</a></li>
+            <li><a href="https://wa.me/33771789802">WhatsApp</a></li>
+            <li style="color:rgba(255,255,255,0.25);font-size:0.82rem;margin-top:8px;">79 Rue Jean Thuile<br/>34090 Montpellier<br/>Consultations à distance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Voyante Cécile · Tous droits réservés · Les consultations sont données à titre de divertissement</p>
+        <p><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTTANT -->
+
+  <a href="https://wa.me/33771789802?text=Bonjour%20C%C3%A9cile%2C%20je%20souhaite%20r%C3%A9server%20une%20consultation." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    <span class="float-text">WhatsApp</span>
+  </a>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+
+    // Burger
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+    burgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const parent = entry.target.closest('.services-grid, .temoignages-grid, .valeurs, .zones-chips, .tarifs-intro');
+          if (parent) {
+            parent.querySelectorAll('.reveal').forEach((el, idx) => setTimeout(() => el.classList.add('visible'), idx * 100));
+          } else {
+            entry.target.classList.add('visible');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Formulaire Netlify
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        const prenom = document.getElementById('f-prenom').value.trim();
+        const nom = document.getElementById('f-nom').value.trim();
+        const tel = document.getElementById('f-tel').value.trim();
+        if (!prenom || !nom || !tel) {
+          e.preventDefault();
+          [document.getElementById('f-prenom'), document.getElementById('f-nom'), document.getElementById('f-tel')].forEach(el => {
+            if (!el.value.trim()) { el.style.borderColor = '#e05'; el.addEventListener('input', () => el.style.borderColor = '', { once: true }); }
+          });
+          return;
+        }
+        e.preventDefault();
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(() => {
+          form.style.display = 'none';
+          const s = document.getElementById('form-success');
+          s.style.display = 'flex'; s.style.flexDirection = 'column'; s.style.alignItems = 'center';
+        })
+        .catch(() => form.submit());
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
